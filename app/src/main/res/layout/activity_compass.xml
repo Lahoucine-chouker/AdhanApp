@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/backmos"
+    >
+
+    <!-- Compass ImageView -->
+    <ImageView
+        android:id="@+id/compass_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/mosbac"
+    android:contentDescription="Compass" />
+
+    <!-- Qiblah direction TextView -->
+    <TextView
+        android:id="@+id/qiblah_direction_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qiblah Direction: "
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

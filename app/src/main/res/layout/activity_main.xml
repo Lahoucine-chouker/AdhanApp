@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/backmos"> <!-- Light background color for a soft look -->
+
+    <!-- Mosque Logo -->
+    <ImageView
+        android:id="@+id/mosque_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:contentDescription="Mosque Logo"
+        android:layout_marginTop="16dp" />
+
+    <!-- Title Image -->
+    <ImageView
+        android:id="@+id/title_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/mosque"
+        android:contentDescription="Title Image"
+        android:scaleType="centerCrop" /> <!-- Scales the image for a better fit -->
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prayer Times App"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginTop="10dp"
+        android:gravity="center" />
+
+    <!-- Prayer Times List -->
+    <ListView
+        android:id="@+id/prayer_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:paddingTop="20dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp" /> <!-- Elevation for a subtle shadow effect -->
+
+    <!-- Compass Button -->
+    <Button
+        android:id="@+id/compass_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Qiblah Direction"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_background" /> <!-- Custom button background with rounded corners -->
+
+</LinearLayout>
